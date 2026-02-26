@@ -14,5 +14,5 @@ CREATE TABLE historico (
     FOREIGN KEY (catalogoID) REFERENCES catalogos(id),
     FOREIGN KEY (usuarioID)  REFERENCES usuariosServidores(id),
 
-    CHECK (dataHora GLOB '____-__-__T__:__:__Z')
+    CHECK (dataHora GLOB '????-??-??T??:??:??Z')
 );

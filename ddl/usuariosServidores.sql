@@ -24,9 +24,9 @@ CREATE TABLE usuariosServidores (
     CHECK (alteradoPor IS NULL OR alteradoPor LIKE '________-____-____-____-____________'),
     CHECK (excluidoPor IS NULL OR excluidoPor LIKE '________-____-____-____-____________'),
 
-    CHECK (criadoEm GLOB '____-__-__T__:__:__Z'),
-    CHECK (alteradoEm IS NULL OR alteradoEm GLOB '____-__-__T__:__:__Z'),
-    CHECK (excluidoEm IS NULL OR excluidoEm GLOB '____-__-__T__:__:__Z'),
+    CHECK (criadoEm GLOB '????-??-??T??:??:??Z'),
+    CHECK (alteradoEm IS NULL OR alteradoEm GLOB '????-??-??T??:??:??Z'),
+    CHECK (excluidoEm IS NULL OR excluidoEm GLOB '????-??-??T??:??:??Z'),
     
     CHECK (matricula          GLOB '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
     CHECK (cpf IS NULL OR cpf GLOB '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
